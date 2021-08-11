@@ -21,7 +21,7 @@ def zip_folders(file: str) -> None:
 
 zip_folders('python.zip')
 
-client_aws = boto3.client('lambda',region_name='us-east-1',aws_access_key_id='AKIAZXRLS7IUQ4J6EIVF',aws_secret_access_key='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')
+client_aws = boto3.client('lambda',region_name='us-east-1',aws_access_key_id='',aws_secret_access_key='')
 
 with open('python.zip','rb') as zip:
     file = zip.read()  
