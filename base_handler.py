@@ -1,11 +1,7 @@
 import json
-
+from cli import Cli
 
 class BaseHandler:
-    def __init__(self) -> None:
-        self.configs = self._read_configs()
+    def __init__(self,cli: Cli) -> None:
+        self.configs = cli.configs
 
-    def _read_configs(self) -> dict:
-        with open("configs.json", "r") as config_file:
-            config = json.load(config_file)
-            return config
