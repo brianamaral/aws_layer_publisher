@@ -9,4 +9,3 @@ class BaseHandler:
         with open("configs.json", "r") as config_file:
             config = json.load(config_file)
             return config
-
