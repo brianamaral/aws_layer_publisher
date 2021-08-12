@@ -10,8 +10,3 @@ class BaseHandler:
             config = json.load(config_file)
             return config
 
-
-handler = BaseHandler()
-
-for runtimes in handler.configs["runtimes"]:
-    print(runtimes)
