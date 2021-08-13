@@ -3,9 +3,9 @@ from setuptools import setup, find_packages
 
 setup(name='layer_builder',
       version='0.1',
-      description='The funniest joke in the world',
+      description='AWS Lambda Layer publisher',
       author='Flying Circus',
-      author_email='flyingcircus@example.com',
+      url = 'https://github.com/brianamaral/aws_layer_publisher',
       license='MIT',
       packages=['layer_builder'],
       entry_points={
