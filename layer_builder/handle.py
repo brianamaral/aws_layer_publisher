@@ -21,6 +21,6 @@ def handle():
 
     lambda_handler.publish_layer()
 
-if __name__ == '__main__':
-    handle()
 
+if __name__ == "__main__":
+    handle()
