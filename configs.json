@@ -1,7 +1,0 @@
-{
-    "layer_name":"teste",
-    "description":"",
-    "region":"sa-east-1",
-    "runtimes":["1","2"],
-    "libraries":["requests","numpy"]
-}

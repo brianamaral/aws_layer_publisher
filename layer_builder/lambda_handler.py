@@ -1,5 +1,5 @@
 import boto3
-from base_handler import BaseHandler
+from .base_handler import BaseHandler
 
 
 class LambdaHandler(BaseHandler):

@@ -1,10 +1,10 @@
-from cli import Cli
-from pip_handler import PipHandler
-from file_handler import FileHandler
-from lambda_handler import LambdaHandler
+from .cli import Cli
+from .pip_handler import PipHandler
+from .file_handler import FileHandler
+from .lambda_handler import LambdaHandler
 
 
-def main():
+def handle():
     cli = Cli()
 
     pip_handler = PipHandler(cli=cli)
@@ -21,4 +21,6 @@ def main():
 
     lambda_handler.publish_layer()
 
-main()
+if __name__ == '__main__':
+    handle()
+

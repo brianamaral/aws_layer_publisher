@@ -1,6 +1,6 @@
 import os
 import zipfile
-from base_handler import BaseHandler
+from .base_handler import BaseHandler
 import logging
 
 

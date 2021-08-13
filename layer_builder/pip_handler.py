@@ -1,7 +1,7 @@
 import os
 import subprocess
 import sys
-from base_handler import BaseHandler
+from .base_handler import BaseHandler
 
 PATH = "python/lib/python3.8/site-packages"
 

@@ -1,5 +1,5 @@
 import json
-from cli import Cli
+from .cli import Cli
 
 
 class BaseHandler:
