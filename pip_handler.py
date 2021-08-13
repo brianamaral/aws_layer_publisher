@@ -7,8 +7,8 @@ PATH = "python/lib/python3.8/site-packages"
 
 
 class PipHandler(BaseHandler):
-    def __init__(self) -> None:
-        super().__init__()
+    def __init__(self, cli) -> None:
+        super().__init__(cli=cli)
         self._build_dirs()
 
     def _build_dirs(self) -> None:
