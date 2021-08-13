@@ -37,11 +37,17 @@ class Cli:
         while True:
             region = input("set your region [default: sa-east-1]: ")
 
-            if region not in self.regions:
+            if self._blank_option(option = region):
+                region = 'sa-east-1'
+            elif region not in self.regions:
                 print(f"there is no region named {region}, try another one")
                 continue
 
             return region
+    
+    def _blank_option(self,option: str) -> bool:
+        return True if option == '' else False
+
 
     def set_lib_list(self) -> None:
         while True:

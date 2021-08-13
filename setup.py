@@ -8,7 +8,8 @@ setup(name='layer_builder',
       author_email='flyingcircus@example.com',
       license='MIT',
       packages=['layer_builder'],
-      entry_ponits={
-        'console_scripts': ['build_layer=layer_builder.handle:main'],
+      entry_points={
+        'console_scripts': ['build_layer = layer_builder.handle:handle'],
     },
+    
       zip_safe=False)
