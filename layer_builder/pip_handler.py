@@ -2,7 +2,10 @@ import os
 import subprocess
 import sys
 from .base_handler import BaseHandler
+import logging
 
+
+logging.basicConfig(level=logging.ERROR)
 PATH = "python/lib/python3.8/site-packages"
 
 
@@ -16,6 +19,9 @@ class PipHandler(BaseHandler):
 
     def install_dependencies(self) -> None:
         for dependencie in self.configs["libraries"]:
-            subprocess.check_call(
-                [sys.executable, "-m", "pip", "install", dependencie, "-t", PATH]
-            )
+            try:
+                subprocess.check_call(
+                    [sys.executable, "-m", "pip", "install", dependencie, "-t", PATH]
+                )
+            except subprocess.CalledProcessError:
+                continue
